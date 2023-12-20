@@ -8,20 +8,38 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+
+/* Hide scrollbar for all browsers except Firefox */
+/* For Firefox, the scrollbar will still be visible */
+/* You may need to adjust these styles for cross-browser compatibility */
+
+/* Hide the scrollbar for most browsers */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+}
+
+/* Hide the scrollbar for WebKit-based browsers (Chrome, Safari) */
+/* This will affect browsers that support WebKit scrollbar styles */
+/* You might need vendor prefixes for full cross-browser support */
+/* The thumb color is set to transparent */
+/* Note: Safari on macOS does not support hiding the scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Hide the scrollbar for Firefox */
+/* Set the scrollbar width to zero */
+/* Note: This won't completely hide the scrollbar in Firefox */
+/* Users will still be able to see a thin scrollbar in Firefox */
+/* You may use custom Firefox scrollbar styling for complete hiding */
+/* For that, you might require a separate approach using Firefox-specific styles */
+/* For demonstration, this is setting the scrollbar width to zero */
+* {
+  scrollbar-width: none;
 }
