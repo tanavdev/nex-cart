@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛒 Nex-Cart E-Commerce Application 👥
 
-## Getting Started
+Nex-Cart is an e-commerce web application built with Next.js that enables users to list their products for sale and make purchases. It is integrated with Firebase for authentication, database management, and other functionalities.
 
-First, run the development server:
+## Features
+
+- User authentication via Firebase Authentication.
+- Product listing and selling capabilities.
+- Shopping cart functionality for users to add and purchase items.
+- Integration with Firebase Firestore for database management.
+- Responsive design for seamless user experience across devices.
+
+## Requirements
+
+- Node.js
+- Next.js
+- Firebase SDK
+- Firebase Firestore (for database)
+- Other dependencies (listed in package.json)
+
+## Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/tanavdev/nex-cart.git
+cd nex-cart
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Set up Firebase
+
+- Create a Firebase project at Firebase Console.
+- Obtain Firebase configuration credentials.
+- Set up Firebase Authentication and Firestore for the project.
+- Add Firebase configuration to your Next.js app (usually in a file like ```firebaseConfig.js```).
+
+### 4. Start the application
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+The app should now be running locally on [http://localhost:3000/](http://localhost:3000/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Access the application by visiting `http://localhost:3000/`.
+- Register for an account or log in if you already have an account.
+- Use the functionalities to list products for sale, add items to the cart, and complete purchases.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Firebase Integration
 
-## Learn More
+- Utilize Firebase Authentication for user login/signup.
+- Store and manage product data using Firebase Firestore.
+- Implement Firebase Cloud Functions for additional backend operations if needed.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions are welcome! Please fork the repository, make changes, and submit a pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
